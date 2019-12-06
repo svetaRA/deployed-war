@@ -6,18 +6,18 @@ pipeline {
     
        stage('install stage') {
               steps {
-              echo "  bat "mvn install"'
+               bat "mvn install"'
         }
     }
         stage('Compile stage') {
             steps {
-             echo   "bat "mvn clean compile" "
+                bat "mvn clean compile" 
         }
     }
 
          stage('testing stage') {
              steps {
-             echo "   bat "mvn test""
+                bat "mvn test"
         }
     }
 
